@@ -627,9 +627,18 @@ h3 {
   background-color: #31d0aa;
 }
 
-.form-label {
-  /* width: 453px;
-  height: 80px; */
+.container-form-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+/* .form-label {
+ width: 453px;
+  height: 80px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -637,21 +646,31 @@ h3 {
   max-width: 453px;
   margin-left: 80px;
   color: var(--WHITE, #fff);
-}
+} */
 
 .form {
   display: flex;
-  flex-direction: row;
+  gap: 24px;
 }
 
 .form-input {
   width: 264px;
   height: 40px;
-
+  border: 1px solid #ffffff;
   border-radius: 4px;
-  border: 1px solid var(--WHITE, #fff);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  background: var(--NAVY-BLUE, #2e2f42);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.container-form {
+  margin-left: 80px;
 }
 
 .form-input::placeholder {
@@ -660,16 +679,22 @@ h3 {
 }
 
 .form-btn {
-  display: inline-flex;
+  min-width: 165px;
+  height: 40px;
+  display: flex;
   padding: 8px 24px;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  margin-left: 24px;
-
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
   border-radius: 4px;
-  background: var(--IRIS, #4d5ae5);
-  color: var(--WHITE, #fff);
+  border: none;
   cursor: pointer;
 }
 
@@ -680,3 +705,14 @@ h3 {
 .form-btn:focus {
   background: var(--OCEAN, #404bbf);
 }
+
+.btn-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+
+/* <img
+                src="./images/plane-icon.svg"
+                alt="plane-icon"
+                width="24"
+              /> */
